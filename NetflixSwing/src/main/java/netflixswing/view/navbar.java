@@ -32,7 +32,7 @@ public class navbar extends javax.swing.JPanel {
         jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
         jPopupMenu1 = new javax.swing.JPopupMenu();
-        jLabel1 = new javax.swing.JLabel();
+        logohome = new javax.swing.JLabel();
         btnhome = new javax.swing.JLabel();
         btnseries = new javax.swing.JLabel();
         btnmovies = new javax.swing.JLabel();
@@ -42,7 +42,7 @@ public class navbar extends javax.swing.JPanel {
         btnsearch = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         btnuser = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        btnconf = new javax.swing.JLabel();
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
@@ -54,9 +54,9 @@ public class navbar extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(38, 38, 19));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/netflixswing/view/logo-netflix-256.png"))); // NOI18N
-        jLabel1.setMaximumSize(new java.awt.Dimension(3500, 946));
-        jLabel1.setMinimumSize(new java.awt.Dimension(3500, 946));
+        logohome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/netflixswing/view/logo-netflix-256.png"))); // NOI18N
+        logohome.setMaximumSize(new java.awt.Dimension(3500, 946));
+        logohome.setMinimumSize(new java.awt.Dimension(3500, 946));
 
         btnhome.setFont(new java.awt.Font("Cantarell", 1, 16)); // NOI18N
         btnhome.setForeground(new java.awt.Color(254, 254, 254));
@@ -89,14 +89,14 @@ public class navbar extends javax.swing.JPanel {
 
         btnuser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/netflixswing/view/user.png"))); // NOI18N
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/netflixswing/view/seta_branca.png"))); // NOI18N
+        btnconf.setIcon(new javax.swing.ImageIcon(getClass().getResource("/netflixswing/view/seta_branca.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(logohome, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(31, 31, 31)
                 .addComponent(btnhome)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -116,7 +116,7 @@ public class navbar extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addComponent(btnuser)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
+                .addComponent(btnconf)
                 .addGap(24, 24, 24))
         );
         layout.setVerticalGroup(
@@ -125,13 +125,13 @@ public class navbar extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(logohome, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(39, 39, 39)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnkids)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabel2)
+                                .addComponent(btnconf)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(btnhome)
                                     .addComponent(btnseries)
@@ -148,6 +148,7 @@ public class navbar extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel btnaddrecent;
+    private javax.swing.JLabel btnconf;
     private javax.swing.JLabel btnhome;
     private javax.swing.JLabel btnkids;
     private javax.swing.JLabel btnmovies;
@@ -155,13 +156,12 @@ public class navbar extends javax.swing.JPanel {
     private javax.swing.JLabel btnsearch;
     private javax.swing.JLabel btnseries;
     private javax.swing.JLabel btnuser;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPopupMenu jPopupMenu1;
+    private javax.swing.JLabel logohome;
     // End of variables declaration//GEN-END:variables
 }
