@@ -1,8 +1,6 @@
 package netflixswing.view;
 
-import java.awt.Color;
 import java.awt.FlowLayout;
-import java.awt.Panel;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -25,31 +23,38 @@ public class Header {
 
 		Box titleText = Box.createHorizontalBox();
 		JLabel title = new JLabel("<html><span style='color: Red;'>NetFlix</span></html>");
-		BufferedImage img = ImageIO
-				.read(new File("C:/Users/rfarias/Documents/ProgramacaoII/NetflixSwing/src/main/java/netflixswing/view/gradientblack.jpg"));
-		JLabel jlabel = new JLabel();
 		title.setFont(title.getFont().deriveFont(64.0f));
-		// JLabel version = new
+		
+		
+		BufferedImage backgroundImage = ImageIO.read(new File("C:/Users/rfarias/Documents/ProgramacaoII/NetflixSwing/src/main/java/netflixswing/view/gradientblack.jpg"));
+		JLabel jlabel = new JLabel();
+		jlabel.setIcon(new ImageIcon(backgroundImage));
+		
+		
+		BufferedImage iconNetflix = ImageIO.read(new File("C:/Users/rfarias/Documents/ProgramacaoII/NetflixSwing/src/main/java/netflixswing/view/netflix-logo2.png"));
+		iconNetflix.getScaledInstance(1, 2, 50);
+		JLabel jlabel1 = new JLabel();
+		jlabel1.setIcon(new ImageIcon(iconNetflix));
+		
 		// JLabel("<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Version
 		// 1.0<br>Created by Luke Carr</html>");
 		// JLabel slogan = new JLabel("<html>Full Potential<br>Minimal Knowledge</html>");
-		// titleText.add(version);
-		jlabel.setIcon(new ImageIcon(img));
-		titleText.add(title);
 		// titleText.add(slogan);
+		titleText.add(title);
 		titleText.setAlignmentX(frame.getWidth() / 2);
 
 		/*
 		 * Box inputContent = Box.createHorizontalBox(); JTextArea code = new JTextArea(35,65); code.setEditable(true);
 		 * code.setBorder(null); inputContent.add(code);
 		 */
+		frame.add(jlabel1);
 		frame.add(jlabel);
 		frame.add(titleText);
-		// frame.add(inputContent);
+		
 		frame.pack();
 		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);
 		
-	    frame.getLayeredPane().add(title,JLayeredPane.PALETTE_LAYER);	
+	    frame.getLayeredPane().add(jlabel1,JLayeredPane.PALETTE_LAYER);	
 	}
 }
